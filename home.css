@@ -9,7 +9,7 @@ body {
 
 #bo{
     width: 95%;
-    margin:  5% 0 0 2%;
+    margin:  5% 0 30% 2%;
     position: relative;
 
 }
@@ -134,6 +134,31 @@ body {
     transition-duration: 1s;
 }
 
+#voteBoxconso{
+    position: fixed;
+    margin: 0% 0% 0% 0%;
+    width: 40%;
+    height: 40%;
+    overflow: hidden;
+    bottom: -61%;
+    right: 40%;
+    transition-duration: 1s;
+}
 
+#conso{
+    position: fixed;
+    z-index: 5;
+    bottom: 5%;
+    right: 40%;
+    font-weight: 500;
+    font-size: 200%;
+    background-color: orangered;
+    padding: 20px 40px ;
+    border-radius: 100%;
+    color: white;
+    cursor: pointer;
+
+    transition-duration: 1s;
+}
 
 

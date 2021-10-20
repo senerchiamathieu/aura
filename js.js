@@ -90,6 +90,7 @@ window.addEventListener("DOMContentLoaded", (event) => {
 
 
 var etat = 1;
+var etat2 = 1;
 
 
 function vote(){
@@ -113,6 +114,35 @@ function vote(){
     //console.log(etat +" --");
 
     etat--;
+    return;
+
+  }
+
+  
+  
+}
+
+function vote2(){
+  var voteButton = document.getElementById("conso");
+  var voteBox = document.getElementById("voteBoxconso");
+ 
+  console.log(etat);
+
+  if(etat2 == 1){
+    voteBox.style.bottom=("0%");
+    voteButton.style.bottom=(voteBox.clientHeight );
+  
+  //console.log(etat +" ++");
+
+  etat2++;
+    return;
+  }
+  if(etat2 == 2){
+    voteBox.style.bottom=("-61%");
+    voteButton.style.bottom=("5%");
+    //console.log(etat +" --");
+
+    etat2--;
     return;
 
   }
