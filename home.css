@@ -22,22 +22,13 @@ body {
 }
 .img {
     width: 100%;
-    display: grid;
-    grid-template-columns:80% 20%;
+    
 }
 .img a img {
     width: 100%;
-    grid-column:1;
 }
 
-.voteBox{
-    margin: 0% 0% 0% 10%;
-    grid-column:2;
-    width: 98%;
-    height: 100%;
-    overflow: hidden;
 
-}
 
 .txt{
     width: 100%;
@@ -73,5 +64,37 @@ body {
     background-color: #fff;
 
 }
+
+
+#voteBox{
+    position: fixed;
+    margin: 0% 0% 0% 0%;
+    width: 40%;
+    height: 40%;
+    overflow: hidden;
+    bottom: -61%;
+    right: 2%;
+    transition-duration: 1s;
+
+
+}
+
+#vote{
+    position: fixed;
+    z-index: 5;
+    bottom: 5%;
+    right: 5%;
+    font-weight: 500;
+    font-size: 150%;
+    background-color: orangered;
+    padding: 0px 30px ;
+    border-radius: 100%;
+    color: white;
+    cursor: pointer;
+
+    transition-duration: 1s;
+}
+
+
 
 
