@@ -1,11 +1,35 @@
 window.addEventListener("DOMContentLoaded", (event) => {
 
-
-
-    
-
+    name()
 
   });
+
+
+  function name(){
+    var nbr = document.getElementsByClassName("img").length;
+    var newIframe = document.createElement("iframe");
+
+    newIframe.setAttribute('class', 'voteBox');
+    newIframe.setAttribute('title', 'voteBox');
+    newIframe.setAttribute('src', 'https://www.surveylegend.com/s/3o8o');
+
+    
+    for(i = 0; i <= nbr; i++){
+        var newH1 = document.createElement("h1");
+        var newContent = document.createTextNode('Hébergement ' + i);
+        newH1.appendChild(newContent);
+        
+
+        var currentDiv2 = document.getElementsByClassName('img')[i];
+        console.log(newIframe)
+
+        currentDiv2.appendChild(newH1);
+        //currentDiv2.appendChild(newIframe);
+
+    }
+
+  }
+
 
   function add(){
 
