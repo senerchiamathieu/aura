@@ -21,7 +21,7 @@ window.addEventListener("DOMContentLoaded", (event) => {
         
 
         var currentDiv2 = document.getElementsByClassName('img')[i];
-        console.log(newIframe)
+        //console.log(newIframe)
 
         currentDiv2.appendChild(newH1);
         //currentDiv2.appendChild(newIframe);
